@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76A23DC62265768300DBD993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DC52265768300DBD993 /* AppDelegate.swift */; };
+		76A23DC82265768300DBD993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DC72265768300DBD993 /* ViewController.swift */; };
+		76A23DCB2265768300DBD993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DC92265768300DBD993 /* Main.storyboard */; };
+		76A23DCD2265768400DBD993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DCC2265768400DBD993 /* Assets.xcassets */; };
+		76A23DD02265768400DBD993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DCE2265768400DBD993 /* LaunchScreen.storyboard */; };
+		76A23DDB2265768500DBD993 /* PodcastPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DDA2265768500DBD993 /* PodcastPickerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76A23DD72265768500DBD993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76A23DBA2265768200DBD993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76A23DC12265768200DBD993;
+			remoteInfo = PodcastPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76A23DC22265768200DBD993 /* PodcastPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A23DC52265768300DBD993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76A23DC72265768300DBD993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76A23DCA2265768300DBD993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76A23DCC2265768400DBD993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76A23DCF2265768400DBD993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76A23DD12265768400DBD993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A23DD62265768500DBD993 /* PodcastPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A23DDA2265768500DBD993 /* PodcastPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPickerTests.swift; sourceTree = "<group>"; };
+		76A23DDC2265768500DBD993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76A23DBF2265768200DBD993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A23DD32265768500DBD993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76A23DB92265768200DBD993 = {
+			isa = PBXGroup;
+			children = (
+				76A23DC42265768200DBD993 /* PodcastPicker */,
+				76A23DD92265768500DBD993 /* PodcastPickerTests */,
+				76A23DC32265768200DBD993 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76A23DC32265768200DBD993 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76A23DC22265768200DBD993 /* PodcastPicker.app */,
+				76A23DD62265768500DBD993 /* PodcastPickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76A23DC42265768200DBD993 /* PodcastPicker */ = {
+			isa = PBXGroup;
+			children = (
+				76A23DC52265768300DBD993 /* AppDelegate.swift */,
+				76A23DC72265768300DBD993 /* ViewController.swift */,
+				76A23DC92265768300DBD993 /* Main.storyboard */,
+				76A23DCC2265768400DBD993 /* Assets.xcassets */,
+				76A23DCE2265768400DBD993 /* LaunchScreen.storyboard */,
+				76A23DD12265768400DBD993 /* Info.plist */,
+			);
+			path = PodcastPicker;
+			sourceTree = "<group>";
+		};
+		76A23DD92265768500DBD993 /* PodcastPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				76A23DDA2265768500DBD993 /* PodcastPickerTests.swift */,
+				76A23DDC2265768500DBD993 /* Info.plist */,
+			);
+			path = PodcastPickerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76A23DC12265768200DBD993 /* PodcastPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A23DDF2265768500DBD993 /* Build configuration list for PBXNativeTarget "PodcastPicker" */;
+			buildPhases = (
+				76A23DBE2265768200DBD993 /* Sources */,
+				76A23DBF2265768200DBD993 /* Frameworks */,
+				76A23DC02265768200DBD993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodcastPicker;
+			productName = PodcastPicker;
+			productReference = 76A23DC22265768200DBD993 /* PodcastPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76A23DD52265768500DBD993 /* PodcastPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A23DE22265768500DBD993 /* Build configuration list for PBXNativeTarget "PodcastPickerTests" */;
+			buildPhases = (
+				76A23DD22265768500DBD993 /* Sources */,
+				76A23DD32265768500DBD993 /* Frameworks */,
+				76A23DD42265768500DBD993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76A23DD82265768500DBD993 /* PBXTargetDependency */,
+			);
+			name = PodcastPickerTests;
+			productName = PodcastPickerTests;
+			productReference = 76A23DD62265768500DBD993 /* PodcastPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76A23DBA2265768200DBD993 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Chelsea Troy";
+				TargetAttributes = {
+					76A23DC12265768200DBD993 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					76A23DD52265768500DBD993 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 76A23DC12265768200DBD993;
+					};
+				};
+			};
+			buildConfigurationList = 76A23DBD2265768200DBD993 /* Build configuration list for PBXProject "PodcastPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76A23DB92265768200DBD993;
+			productRefGroup = 76A23DC32265768200DBD993 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76A23DC12265768200DBD993 /* PodcastPicker */,
+				76A23DD52265768500DBD993 /* PodcastPickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76A23DC02265768200DBD993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A23DD02265768400DBD993 /* LaunchScreen.storyboard in Resources */,
+				76A23DCD2265768400DBD993 /* Assets.xcassets in Resources */,
+				76A23DCB2265768300DBD993 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A23DD42265768500DBD993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76A23DBE2265768200DBD993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A23DC82265768300DBD993 /* ViewController.swift in Sources */,
+				76A23DC62265768300DBD993 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A23DD22265768500DBD993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A23DDB2265768500DBD993 /* PodcastPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76A23DD82265768500DBD993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76A23DC12265768200DBD993 /* PodcastPicker */;
+			targetProxy = 76A23DD72265768500DBD993 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76A23DC92265768300DBD993 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A23DCA2265768300DBD993 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76A23DCE2265768400DBD993 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A23DCF2265768400DBD993 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76A23DDD2265768500DBD993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76A23DDE2265768500DBD993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76A23DE02265768500DBD993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = PodcastPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.PodcastPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76A23DE12265768500DBD993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = PodcastPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.PodcastPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76A23DE32265768500DBD993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = PodcastPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.PodcastPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodcastPicker.app/PodcastPicker";
+			};
+			name = Debug;
+		};
+		76A23DE42265768500DBD993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = PodcastPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.PodcastPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodcastPicker.app/PodcastPicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76A23DBD2265768200DBD993 /* Build configuration list for PBXProject "PodcastPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A23DDD2265768500DBD993 /* Debug */,
+				76A23DDE2265768500DBD993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A23DDF2265768500DBD993 /* Build configuration list for PBXNativeTarget "PodcastPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A23DE02265768500DBD993 /* Debug */,
+				76A23DE12265768500DBD993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A23DE22265768500DBD993 /* Build configuration list for PBXNativeTarget "PodcastPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A23DE32265768500DBD993 /* Debug */,
+				76A23DE42265768500DBD993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76A23DBA2265768200DBD993 /* Project object */;
+}
