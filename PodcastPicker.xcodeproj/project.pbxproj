@@ -13,6 +13,7 @@
 		76A23DCD2265768400DBD993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DCC2265768400DBD993 /* Assets.xcassets */; };
 		76A23DD02265768400DBD993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DCE2265768400DBD993 /* LaunchScreen.storyboard */; };
 		76A23DDB2265768500DBD993 /* PodcastPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DDA2265768500DBD993 /* PodcastPickerTests.swift */; };
+		76A23DE6226576A800DBD993 /* PodcastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DE5226576A800DBD993 /* PodcastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		76A23DD62265768500DBD993 /* PodcastPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A23DDA2265768500DBD993 /* PodcastPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPickerTests.swift; sourceTree = "<group>"; };
 		76A23DDC2265768500DBD993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A23DE5226576A800DBD993 /* PodcastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				76A23DC52265768300DBD993 /* AppDelegate.swift */,
 				76A23DC72265768300DBD993 /* ViewController.swift */,
+				76A23DE5226576A800DBD993 /* PodcastService.swift */,
 				76A23DC92265768300DBD993 /* Main.storyboard */,
 				76A23DCC2265768400DBD993 /* Assets.xcassets */,
 				76A23DCE2265768400DBD993 /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 			files = (
 				76A23DC82265768300DBD993 /* ViewController.swift in Sources */,
 				76A23DC62265768300DBD993 /* AppDelegate.swift in Sources */,
+				76A23DE6226576A800DBD993 /* PodcastService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
