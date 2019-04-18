@@ -46,9 +46,7 @@ class PodcastService {
                 let podcastResult = try decoder.decode(PodcastResult.self, from: data)
                 DispatchQueue.main.async { completion(podcastResult.results, nil) }
             } catch (let error) {
-                
                 DispatchQueue.main.async { completion(nil, error) }
-                
             }
         }
         task.resume()

@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     var podcasts: [Podcast] = []
     var podcastService: PodcastService!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "My Podcasts"
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
             height: 20
         ))
         self.view.addSubview(activityIndicator)
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
         
         self.podcastService = PodcastService()
         self.podcastService.search(for: "comedy", completion: { podcasts, error in
@@ -38,13 +41,12 @@ class ViewController: UIViewController {
             }
             self.podcasts = podcasts
             self.tableView.reloadData()
-            activityIndicator.isHidden = true
+            activityIndicator.stopAnimating()
         })
     }
 }
 
 extension ViewController: UITableViewDelegate {
-    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -53,12 +55,10 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let podcast = podcasts[indexPath.row]
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "podcastCell", for: indexPath)
         cell.textLabel?.text = podcast.trackName
-        cell.detailTextLabel?.text = podcast.artistName
         
         return cell
     }
