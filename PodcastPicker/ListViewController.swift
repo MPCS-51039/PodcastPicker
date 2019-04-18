@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     var podcasts: [Podcast] = []
     var podcastService: PodcastService!
+    var selectedPodcast: Podcast?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +47,23 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate {
+extension ListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedPodcast = self.podcasts[indexPath.row]
+        
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            let detailPage = segue.destination as! DetailViewController
+            detailPage.podcast = self.selectedPodcast
+        }
+    }
+    
 }
 
-extension ViewController: UITableViewDataSource {
+extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.podcasts.count
     }

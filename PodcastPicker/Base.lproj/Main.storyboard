@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PodcastPicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="PodcastPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,11 +45,42 @@
                     <navigationItem key="navigationItem" id="HB1-bU-OP5"/>
                     <connections>
                         <outlet property="tableView" destination="ngp-7P-I6f" id="jF6-yn-Ruz"/>
+                        <segue destination="ehR-Sg-krE" kind="show" identifier="showDetail" id="0x5-ap-rre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941.5999999999999" y="108.62068965517241"/>
+            <point key="canvasLocation" x="1852" y="98"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hhf-aO-5pw">
+            <objects>
+                <viewController id="ehR-Sg-krE" customClass="DetailViewController" customModule="PodcastPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sXv-Iz-8df">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yze-wz-qRA">
+                                <rect key="frame" x="166.66666666666666" y="424" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yze-wz-qRA" firstAttribute="centerY" secondItem="GGL-ea-Vcl" secondAttribute="centerY" id="pOd-py-cq2"/>
+                            <constraint firstItem="yze-wz-qRA" firstAttribute="centerX" secondItem="GGL-ea-Vcl" secondAttribute="centerX" id="u77-Zs-x1l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GGL-ea-Vcl"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="yze-wz-qRA" id="Zb4-yv-VGY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hni-cF-muJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2810" y="98"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ApT-qu-Tf9">

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768E668C2268046C00B0DF66 /* PodcastResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E668B2268046C00B0DF66 /* PodcastResult.swift */; };
+		768E668E226804BB00B0DF66 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E668D226804BB00B0DF66 /* DetailViewController.swift */; };
 		76A23DC62265768300DBD993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DC52265768300DBD993 /* AppDelegate.swift */; };
-		76A23DC82265768300DBD993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DC72265768300DBD993 /* ViewController.swift */; };
+		76A23DC82265768300DBD993 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23DC72265768300DBD993 /* ListViewController.swift */; };
 		76A23DCB2265768300DBD993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DC92265768300DBD993 /* Main.storyboard */; };
 		76A23DCD2265768400DBD993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DCC2265768400DBD993 /* Assets.xcassets */; };
 		76A23DD02265768400DBD993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A23DCE2265768400DBD993 /* LaunchScreen.storyboard */; };
@@ -27,9 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		768E668B2268046C00B0DF66 /* PodcastResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResult.swift; sourceTree = "<group>"; };
+		768E668D226804BB00B0DF66 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		76A23DC22265768200DBD993 /* PodcastPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A23DC52265768300DBD993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76A23DC72265768300DBD993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76A23DC72265768300DBD993 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		76A23DCA2265768300DBD993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76A23DCC2265768400DBD993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76A23DCF2265768400DBD993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,8 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				76A23DC52265768300DBD993 /* AppDelegate.swift */,
-				76A23DC72265768300DBD993 /* ViewController.swift */,
+				76A23DC72265768300DBD993 /* ListViewController.swift */,
+				768E668D226804BB00B0DF66 /* DetailViewController.swift */,
 				76A23DE5226576A800DBD993 /* PodcastService.swift */,
+				768E668B2268046C00B0DF66 /* PodcastResult.swift */,
 				76A23DC92265768300DBD993 /* Main.storyboard */,
 				76A23DCC2265768400DBD993 /* Assets.xcassets */,
 				76A23DCE2265768400DBD993 /* LaunchScreen.storyboard */,
@@ -200,9 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76A23DC82265768300DBD993 /* ViewController.swift in Sources */,
+				76A23DC82265768300DBD993 /* ListViewController.swift in Sources */,
 				76A23DC62265768300DBD993 /* AppDelegate.swift in Sources */,
+				768E668E226804BB00B0DF66 /* DetailViewController.swift in Sources */,
 				76A23DE6226576A800DBD993 /* PodcastService.swift in Sources */,
+				768E668C2268046C00B0DF66 /* PodcastResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

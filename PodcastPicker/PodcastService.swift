@@ -8,17 +8,6 @@
 
 import UIKit
 
-struct PodcastResult: Codable {
-    let resultCount: Int
-    let results: [Podcast]
-}
-
-struct Podcast: Codable {
-    let artistName: String
-    let trackName: String
-    let genres: [String]
-}
-
 class PodcastService {
     var dataTask: URLSessionDataTask?
     
