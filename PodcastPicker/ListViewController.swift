@@ -16,6 +16,8 @@ class ListViewController: UIViewController {
     var podcastService: PodcastService!
     var selectedPodcast: Podcast?
     
+    var spinner = UIActivityIndicatorView(style: .gray)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,16 +26,13 @@ class ListViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        let activityIndicator = UIActivityIndicatorView(frame: CGRect(
-            x: self.view.center.x,
-            y: self.view.center.y,
-            width: 20,
-            height: 20
-        ))
-        self.view.addSubview(activityIndicator)
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.startAnimating()
+        self.spinner.translatesAutoresizingMaskIntoConstraints = false
+        self.spinner.startAnimating()
+        self.view.addSubview(spinner)
         
+        self.spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        self.spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+
         self.podcastService = PodcastService()
         self.podcastService.search(for: "comedy", completion: { podcasts, error in
             guard let podcasts = podcasts, error == nil else {
@@ -42,7 +41,7 @@ class ListViewController: UIViewController {
             }
             self.podcasts = podcasts
             self.tableView.reloadData()
-            activityIndicator.stopAnimating()
+            self.spinner.stopAnimating()
         })
     }
 }
