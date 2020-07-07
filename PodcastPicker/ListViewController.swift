@@ -41,7 +41,6 @@ class ListViewController: UIViewController {
             }
             self.podcasts = podcasts
             self.tableView.reloadData()
-            self.spinner.stopAnimating()
         })
     }
 }

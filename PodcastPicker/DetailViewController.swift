@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var artistNameLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
